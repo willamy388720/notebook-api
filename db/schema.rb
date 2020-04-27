@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2020_04_27_161859) do
     t.index ["contact_id"], name: "index_phones_on_contact_id"
   end
 
+<<<<<<< HEAD
   create_table "users", force: :cascade do |t|
     t.string "provider", default: "email", null: false
     t.string "uid", default: "", null: false
@@ -70,4 +71,6 @@ ActiveRecord::Schema.define(version: 2020_04_27_161859) do
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
+=======
+>>>>>>> c577aa6a7665be4c573b37fb4a50e17cdfff2087
 end
