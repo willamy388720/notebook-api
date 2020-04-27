@@ -1,4 +1,5 @@
-class PhonesController < ApplicationController
+module V1
+  class PhonesController < ApplicationController
   before_action :set_contact
 
   def destroy
@@ -39,4 +40,5 @@ class PhonesController < ApplicationController
     def phone_params
       ActiveModelSerializers::Deserialization.jsonapi_parse(params)
     end
+  end
 end
